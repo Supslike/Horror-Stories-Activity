@@ -52,7 +52,7 @@ nav {
     height: 100vh;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%), url("static/d4cf47ae89cd8b650fc6c733aa7571ff.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%), url("static/bg\ woods.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,23 +290,4 @@ ul {
     font-size: 16px;
     font-weight: lighter;
     text-align: justify;
-}
-
-.cripay {
-    position: absolute;
-    left: 155vh;
-    z-index: 99;
-    display: none;
-}
-
-.cripay img {
-    position: absolute;
-    z-index: 100;
-    opacity: 0;
-}
-
-.cripay img.one {
-    position: absolute;
-    z-index: 100;
-    opacity: 1;
 }
