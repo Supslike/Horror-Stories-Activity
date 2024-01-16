@@ -36,7 +36,7 @@ nav {
     align-items: center;
     text-indent: 1in;
     font-family: Nosifer;
-    color: #ff4a2af6;
+    color: #d8dcdbce;
     text-shadow: 3px 3px 30px black;
 }
 
@@ -52,7 +52,7 @@ nav {
     height: 100vh;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%), url("static/bg\ woods.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%), url("static/Background\ Woods.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -60,10 +60,10 @@ nav {
 
 .home h2 {
     font-family: Charu Chandan BloodDrip Unicode;
-    color: #fb3512;
+    color: #db2909;
     font-size: 1in;
     font-weight: lighter;
-    animation: glitchs 2s ease-in-out infinite, glitch 2s 5s ease-in-out reverse infinite;
+    animation: glitch 2s ease-in-out infinite alternate-reverse 2s;
     text-shadow: 3px 3px 30px black;
 }
 
@@ -71,7 +71,7 @@ nav {
     font-family: 'Schoolbell', cursive;
     color: #ECEFEE;
     font-size: 0.3in;
-    animation: glitchs 2s ease-in-out infinite, glitchs 2s 5s ease-in-out reverse infinite;
+    animation: smolglitch 4s ease-in-out infinite alternate-reverse;
     animation-delay: 0.3s;
     text-decoration: line-through #ff401e;
     text-decoration-thickness: 3px;
@@ -84,7 +84,7 @@ ul {
 
 .link-section:visited, .link-section:link {
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Schoolbell', cursive;
     color: rgba(248, 248, 248, 0.822);
     transition: all 0.3s;
     font-size: 20px;
@@ -103,73 +103,72 @@ ul {
     text-decoration-style: solid;
 }
 
-@keyframes glitchs {
-    0% {
-        transform: translate(0);
-      }
-    2% {
-        transform: translate(-5px, 5px);
-        filter: blur(1px);
-      }
-    5% {
-        transform: translate(5px, -5px);
-      }
-    8% {
-        transform: translate(-5px, 5px);
-        filter: blur(5px);
-      }
-    11% {
-        transform: translate(5px, -5px);
-      }
-    14% {
-        transform: translate(0);
-        filter: blur(0px);
-      }
-    
-    79% {
-        transform: translate(0);
-        filter: blur(0px);
+@keyframes smolglitch {
+  0% {
+      transform: translate(0);
     }
-
-    80% {
-        transform: translate(-5px, 5px);
-        filter: blur(1px);
-      }
-    81% {
-        transform: translate(5px, -5px);
-      }
-    82% {
-        transform: translate(-5px, 5px);
-        filter: blur(5px);
-      }
-    83% {
-        transform: translate(5px, -5px);
-      }
-    84% {
-        transform: translate(0);
-        filter: blur(0px);
-      }
+  1% {
+      transform: translate(-5px, 5px);
+      filter: blur(1px);
+    }
+  2% {
+      transform: translate(5px, -5px);
+    }
+  3% {
+      transform: translate(-5px, 5px);
+      filter: blur(5px);
+    }
+  4% {
+      transform: translate(5px, -5px);
+    }
+  5% {
+      transform: translate(0);
+      filter: blur(0px);
+    }
+  
+  95% {
+      transform: translate(0);
+      filter: blur(0px);
+    }
+  96% {
+      transform: translate(-5px, 5px);
+      filter: blur(1px);
+    }
+  97% {
+      transform: translate(5px, -5px);
+    }
+  98% {
+      transform: translate(-5px, 5px);
+      filter: blur(5px);
+    }
+  99% {
+      transform: translate(5px, -5px);
+    }
+  100% {
+      transform: translate(0);
+      filter: blur(0px);
+    }
 }
 
 @keyframes glitch {
     0% {
         transform: translate(0);
       }
-    2% {
-        transform: translate(-10px, 10px);
+    1% {
+        transform: translate(-5px, 5px);
         filter: blur(1px);
       }
-    5% {
-        transform: translate(10px, -10px);
+    2% {
+        transform: translate(5px, -5px);
       }
-    8% {
-        transform: translate(-10px, 10px);
+    3% {
+        transform: translate(-5px, 5px);
         filter: blur(5px);
       }
-    11% {
-        transform: translate(10px, -10px);
+    4% {
+        transform: translate(5px, -5px);
       }
-    14% {
+    5% {
         transform: translate(0);
         filter: blur(0px);
       }
@@ -180,18 +179,18 @@ ul {
     }
 
     80% {
-        transform: translate(-10px, 10px);
+        transform: translate(-5px, 5px);
         filter: blur(1px);
       }
     81% {
-        transform: translate(10px, -10px);
+        transform: translate(5px, -5px);
       }
     82% {
-        transform: translate(-10px, 10px);
+        transform: translate(-5px, 5px);
         filter: blur(5px);
       }
     83% {
-        transform: translate(10px, -10px);
+        transform: translate(5px, -5px);
       }
     84% {
         transform: translate(0);
