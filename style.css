@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Schoolbell&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scrollbar-width: 0;
+    scrollbar-color: transparent;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Charu Chandan BloodDrip Unicode";
+    src: url("static/Charu_Chandan_BloodDrip_Unicode-Regular.eot?") format("eot"), url("static/Charu_Chandan_BloodDrip_Unicode-Regular.woff") format("woff"), url("static/Charu_Chandan_BloodDrip_Unicode-Regular.ttf") format("truetype"), url("static/Charu_Chandan_BloodDrip_Unicode-Regular.svg#CharuChandanBloodDripUnicode") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-links ,.logo-sec {
+    width: 50%;
+}
+
+.logo-sec {
+    display: flex;
+    align-items: center;
+    text-indent: 1in;
+    font-family: Nosifer;
+    color: #ff4a2af6;
+    text-shadow: 3px 3px 30px black;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%), url("static/d4cf47ae89cd8b650fc6c733aa7571ff.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home h2 {
+    font-family: Charu Chandan BloodDrip Unicode;
+    color: #fb3512;
+    font-size: 1in;
+    font-weight: lighter;
+    animation: glitchs 2s ease-in-out infinite, glitch 2s 5s ease-in-out reverse infinite;
+    text-shadow: 3px 3px 30px black;
+}
+
+.home p {
+    font-family: 'Schoolbell', cursive;
+    color: #ECEFEE;
+    font-size: 0.3in;
+    animation: glitchs 2s ease-in-out infinite, glitchs 2s 5s ease-in-out reverse infinite;
+    animation-delay: 0.3s;
+    text-decoration: line-through #ff401e;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link-section:visited, .link-section:link {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(248, 248, 248, 0.822);
+    transition: all 0.3s;
+    font-size: 20px;
+    position: relative;
+}
+
+.link-section:visited:hover , .link-section:link:hover {
+    font-family: Charu Chandan BloodDrip Unicode;
+    font-weight: bold;
+    color: #ff7961;
+    font-size: 23px;
+    text-shadow: 3px 3px 10px black;
+    top: 6px;
+    text-decoration: line-through #ff401e;
+    text-decoration-thickness: 1.5px;
+    text-decoration-style: solid;
+}
+
+@keyframes glitchs {
+    0% {
+        transform: translate(0);
+      }
+    2% {
+        transform: translate(-5px, 5px);
+        filter: blur(1px);
+      }
+    5% {
+        transform: translate(5px, -5px);
+      }
+    8% {
+        transform: translate(-5px, 5px);
+        filter: blur(5px);
+      }
+    11% {
+        transform: translate(5px, -5px);
+      }
+    14% {
+        transform: translate(0);
+        filter: blur(0px);
+      }
+    
+    79% {
+        transform: translate(0);
+        filter: blur(0px);
+    }
+
+    80% {
+        transform: translate(-5px, 5px);
+        filter: blur(1px);
+      }
+    81% {
+        transform: translate(5px, -5px);
+      }
+    82% {
+        transform: translate(-5px, 5px);
+        filter: blur(5px);
+      }
+    83% {
+        transform: translate(5px, -5px);
+      }
+    84% {
+        transform: translate(0);
+        filter: blur(0px);
+      }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+      }
+    2% {
+        transform: translate(-10px, 10px);
+        filter: blur(1px);
+      }
+    5% {
+        transform: translate(10px, -10px);
+      }
+    8% {
+        transform: translate(-10px, 10px);
+        filter: blur(5px);
+      }
+    11% {
+        transform: translate(10px, -10px);
+      }
+    14% {
+        transform: translate(0);
+        filter: blur(0px);
+      }
+    
+    79% {
+        transform: translate(0);
+        filter: blur(0px);
+    }
+
+    80% {
+        transform: translate(-10px, 10px);
+        filter: blur(1px);
+      }
+    81% {
+        transform: translate(10px, -10px);
+      }
+    82% {
+        transform: translate(-10px, 10px);
+        filter: blur(5px);
+      }
+    83% {
+        transform: translate(10px, -10px);
+      }
+    84% {
+        transform: translate(0);
+        filter: blur(0px);
+      }
+}
+
+/* Reveal Animation */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.introduction {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.info-wrapper {
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wall-pin {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wall-pin img {
+    height: 3.5in;
+    width: auto;
+    filter: brightness(90%);
+}
+
+.switch-hand {
+    transform: translateY(100px) translateX(-100px) rotateY(180deg);
+}
+
+.info-wrapper h2 {
+    font-family: nosifer;
+    color: #E50815;
+    font-size: 0.5in;
+    margin-bottom: 10px;
+}
+
+.info-wrapper p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(210, 208, 208);
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.story {
+    background-color: black;
+    height: fit-content;
+    padding-bottom: 10vh;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.story h2 {
+    font-family: Charu Chandan BloodDrip Unicode;
+    color: #fb3512;
+    font-size: 1in;
+    font-weight: lighter;
+    animation: glitchs 2s ease-in-out infinite, glitch 2s 5s ease-in-out reverse infinite;
+    text-shadow: 3px 3px 30px black;
+    text-align: center;
+}
+
+.story p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(210, 208, 208);
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.cripay {
+    position: absolute;
+    left: 155vh;
+    z-index: 99;
+    display: none;
+}
+
+.cripay img {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+
+.cripay img.one {
+    position: absolute;
+    z-index: 100;
+    opacity: 1;
+}
